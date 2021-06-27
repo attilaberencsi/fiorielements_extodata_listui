@@ -35,18 +35,23 @@
                     <Collection>
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="ProductID" />
+                            <PropertyValue Property="Label" String="{@i18n>product}"/>
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="QuantityPerUnit" />
+                            <PropertyValue Property="Label" String="{@i18n>quantity}"/>
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="ReorderLevel" />
+                            <PropertyValue Property="Label" String="{@i18n>reorderLevel}"/>
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="UnitsInStock" />
+                            <PropertyValue Property="Label" String="{@i18n>unitsInStock}"/>
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="UnitPrice" />
+                            <PropertyValue Property="Label" String="{@i18n>unitPrice}"/>
                         </Record>
                     </Collection>
                 </Annotation>
