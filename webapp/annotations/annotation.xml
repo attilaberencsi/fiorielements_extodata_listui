@@ -21,6 +21,11 @@
                 <Annotation Term="Common.Text" Path="ProductName"/>
             </Annotations>
             <Annotations Target="NorthwindModel.Product">
+            <Annotation Term="Common.SemanticKey" >
+                <Collection>
+                    <PropertyPath>ProductID</PropertyPath>
+                </Collection>
+            </Annotation>
                 <Annotation Term="UI.SelectionFields">
                     <Collection>
                         <PropertyPath>ProductName</PropertyPath>
