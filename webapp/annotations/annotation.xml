@@ -14,9 +14,12 @@
     </edmx:Reference>
     <edmx:DataServices>
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="customer.fe.demo">
-        <Annotations Target="NorthwindModel.Product/ProductName">
-            <Annotation Term="Common.Label" String="{@i18n>product}"/>
-        </Annotations>
+            <Annotations Target="NorthwindModel.Product/ProductName">
+                <Annotation Term="Common.Label" String="{@i18n>product}" />
+            </Annotations>
+            <Annotations Target="NorthwindModel.Product/ProductID">
+                <Annotation Term="Common.Text" Path="ProductName"/>
+            </Annotations>
             <Annotations Target="NorthwindModel.Product">
                 <Annotation Term="UI.SelectionFields">
                     <Collection>
@@ -29,19 +32,16 @@
                             <PropertyValue Property="Value" Path="ProductID" />
                         </Record>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="ProductName"/>
+                            <PropertyValue Property="Value" Path="QuantityPerUnit" />
                         </Record>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="QuantityPerUnit"/>
+                            <PropertyValue Property="Value" Path="ReorderLevel" />
                         </Record>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="ReorderLevel"/>
+                            <PropertyValue Property="Value" Path="UnitsInStock" />
                         </Record>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="UnitsInStock"/>                               
-                        </Record>
-                        <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="UnitPrice"/>
+                            <PropertyValue Property="Value" Path="UnitPrice" />
                         </Record>
                     </Collection>
                 </Annotation>
