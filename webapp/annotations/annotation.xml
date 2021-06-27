@@ -21,6 +21,12 @@
                 <Annotation Term="Common.Text" Path="ProductName"/>
             </Annotations>
             <Annotations Target="NorthwindModel.Product">
+            <Annotation Term="UI.HeaderInfo" >
+                <Record Type="UI.HeaderInfoType">
+                    <PropertyValue Property="TypeName" String="{@i18n>product}"/>
+                    <PropertyValue Property="TypeNamePlural" String="{@i18n>products}"/>
+                </Record>
+            </Annotation>
             <Annotation Term="Common.SemanticKey" >
                 <Collection>
                     <PropertyPath>ProductID</PropertyPath>
